@@ -1,7 +1,8 @@
 # Python_for_Data_Analysis
 Covers all concepts with respect to python for Data analysis and Data Scientist.
 
-Python Basics - Variables and Keywords Notes
+# Python Basics - Variables and Keywords Notes
+
 Overview
 Introduction to Python variables and keywords, with practical examples from a Jupyter Notebook (Variables & Keywords.ipynb).
 Key Points
