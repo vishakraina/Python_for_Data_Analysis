@@ -1,7 +1,7 @@
 # Python_for_Data_Analysis
 Covers all concepts with respect to python for Data analysis and Data Scientist.
 
-# Python Basics - Variables and Keywords Notes
+# 1. Python Basics - Variables and Keywords Notes
 
 Overview
 Introduction to Python variables and keywords, with practical examples from a Jupyter Notebook (Variables & Keywords.ipynb).
@@ -41,3 +41,55 @@ Keywords
 Reserved words with special meaning (e.g., def, print, type, if, else, continue, break, import, None).
 Cannot be used as variable names, but doing so (e.g., type = 10) is possible though not recommended.
 In Jupyter Notebook, keywords appear green (e.g., def, print, type).
+
+# 2. Python Data Types, Operators, and Operands Notes
+
+Overview
+Introduction to Python data types, operators, and operands, with practical examples from Jupyter Notebook (Datatypes.ipynb).
+
+Key Points
+Data Types
+
+Classified into five categories:
+Numeric: Integers, floats, complex numbers.
+Sequence Types: Strings, lists, tuples.
+Dictionaries: Key-value pairs.
+Boolean: True/False.
+Sets: Unique, unordered collections.
+
+
+Use type() to check the data type of a variable.
+
+Operators
+
+Symbols used for computations, including:
++ (addition)
+- (subtraction)
+* (multiplication)
+/ (division)
+// (floor division)
+% (modulus)
+** (exponentiation)
+
+Operands
+
+Values that operators act upon in expressions.
+
+Order of Precedence
+
+Follows PEMDAS rule:
+Parentheses
+Exponentiation
+Multiplication/Division
+Addition/Subtraction
+
+Installation
+
+Install Python via:
+python.org
+Anaconda Navigator
+Google Colab (no-install option for coding)
+
+Input Function
+
+input() function captures user input, always returning data as a string.
