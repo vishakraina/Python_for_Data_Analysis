@@ -177,7 +177,47 @@ B = copy.copy(A)  # for shallow copy
 
 Tip: Use copy() or slicing [:] to create independent list copies and avoid unintended side effects.
 
-# 4. Loops and Iterations Notes
+# 4 Tuples Notes
+
+## Overview
+Tuples are ordered, immutable sequences of mixed data types, defined with parentheses `()` or comma-separated values.  
+They are similar to lists but immutable, making them suitable for fixed data.  
+This document summarizes tuple characteristics, differences from lists, and practical examples from the provided code and transcript.
+
+## Key Points
+
+- **Tuples**: Ordered, immutable, allow mixed data types (integers, floats, strings, nested tuples/lists). Defined with parentheses `()` or commas.  
+- **Lists**: Ordered, mutable, defined with square brackets `[]`.  
+
+### Differences Between Tuples and Lists
+- **Syntax**: Tuples use `()`, lists use `[]`.  
+- **Mutability**: Tuples are immutable (cannot change elements), lists are mutable.  
+- **Methods**: Tuples have ~33 methods, lists have 40+.  
+- **Use Cases**: Use tuples for fixed data (e.g., passport details), lists for dynamic data (e.g., customer info).  
+- **Dictionary Keys**: Tuples are hashable (can be dictionary keys), lists are not.  
+
+### Indexing and Slicing
+- **Indexing**: Zero-based (e.g., `tuple[0]`) or negative (e.g., `tuple[-1]` for the last element).  
+- **Slicing**: Extract sub-tuples (e.g., `tuple[0:2]`).  
+
+### Operations
+- **Concatenation**: Use `+` to combine tuples.  
+- **Functions**: `min()`, `max()`, `sum()`.  
+- **Membership**: Use `in` to check if an element exists in a tuple.  
+
+### Immutability
+- Elements cannot be modified directly.  
+- To update, use concatenation or **type casting** (convert to list, modify, and convert back to tuple).  
+
+### Sorting
+- Tuples cannot be sorted in place.  
+- Convert to list, sort, then convert back to tuple.  
+
+### Nested Tuples/Lists
+- Tuples can contain other tuples or lists as elements.
+
+
+# 5. Loops and Iterations Notes
 
 ## Overview
 Loops in Python are used for repetitive tasks, iterating over iterables like lists, tuples, strings, dictionaries, and sets.  
