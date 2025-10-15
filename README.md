@@ -217,7 +217,84 @@ This document summarizes tuple characteristics, differences from lists, and prac
 - Tuples can contain other tuples or lists as elements.
 
 
-# 5. Loops and Iterations Notes
+# 5. Sets Notes 
+
+## Overview
+Sets are **unordered collections of unique elements**, defined with **curly braces `{}`**.  
+They are ideal for tasks requiring **distinct values**, such as finding unique items or performing **set operations** like union, intersection, and difference.
+
+This document summarizes **set characteristics**, **comparisons with lists and tuples**, and **practical examples** from the provided `sets.ipynb` and transcript.
+
+---
+
+## Key Points
+
+- **Sets**  
+  - Unordered  
+  - Mutable (can add or remove elements)  
+  - Contain only unique elements  
+  - Defined with curly braces `{}`  
+
+- **Lists**  
+  - Ordered  
+  - Mutable  
+  - Allow duplicates  
+  - Defined with square brackets `[]`
+
+- **Tuples**  
+  - Ordered  
+  - Immutable  
+  - Allow duplicates  
+  - Defined with parentheses `()` or commas  
+
+---
+
+## Key Characteristics
+
+- Sets **do not allow duplicates** — converting a list to a set automatically removes duplicates.  
+- Sets are **unordered**, so **indexing (e.g., `set[0]`) is not supported**.  
+- **Membership testing (`in`)** is faster in sets because they use **hash tables** internally.  
+- Sets support various **mathematical operations**:
+  - **Union (`|`)** — Combines all unique elements from both sets.  
+  - **Intersection (`&`)** — Elements common to both sets.  
+  - **Difference (`-`)** — Elements in one set but not in the other.  
+  - **Symmetric Difference (`^`)** — Elements present in either set but not both.
+
+---
+
+## Use Cases
+
+- Removing duplicates from data collections.  
+- Checking **unique elements** in datasets (e.g., unique grades, user IDs).  
+- Performing **set operations** for comparisons or filtering common elements.  
+- Efficient **membership testing** — e.g., checking if a value exists in a dataset.
+
+---
+
+## Comparison Table
+
+| Feature              | List                 | Tuple                | Set                   |
+|----------------------|----------------------|----------------------|------------------------|
+| Ordered              | ✅ Yes               | ✅ Yes               | ❌ No                  |
+| Mutable              | ✅ Yes               | ❌ No                | ✅ Yes                 |
+| Allows Duplicates    | ✅ Yes               | ✅ Yes               | ❌ No                  |
+| Syntax               | `[]`                 | `()` or commas       | `{}`                  |
+| Indexing Supported   | ✅ Yes               | ✅ Yes               | ❌ No                  |
+| Hashable             | ❌ No                | ✅ Yes               | ❌ No (cannot be keys) |
+
+---
+
+## Summary
+
+Use:
+- **Lists** for ordered, changeable collections with duplicates.  
+- **Tuples** for fixed, immutable collections.  
+- **Sets** for unique, unordered data and efficient membership testing.  
+
+> **Note:** Sets are **not hashable**, so they **cannot be used as dictionary keys**, whereas tuples can.
+
+
+# 6. Loops and Iterations Notes
 
 ## Overview
 Loops in Python are used for repetitive tasks, iterating over iterables like lists, tuples, strings, dictionaries, and sets.  
