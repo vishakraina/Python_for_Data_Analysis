@@ -176,3 +176,32 @@ import copy
 B = copy.copy(A)  # for shallow copy
 
 Tip: Use copy() or slicing [:] to create independent list copies and avoid unintended side effects.
+
+# 4. Loops and Iterations Notes
+
+## Overview
+Loops in Python are used for repetitive tasks, iterating over iterables like lists, tuples, strings, dictionaries, and sets.  
+This document covers the basics of loops (**for** and **while**), conditional statements (**if**, **elif**, **else**), and comprehensions, with practical examples from the provided transcript and `loops.ipynb`.
+
+## Key Points
+
+- **Iterables**: Objects that can be iterated over (e.g., lists, tuples, strings, dictionaries, sets).  
+- **Iterator**: A variable that traverses each element in an iterable.  
+
+### Loop Types
+- **For Loop**: Iterates over a sequence or range, executing until the sequence is exhausted.  
+- **While Loop**: Executes as long as a condition is true, requiring manual counter updates.  
+
+### Conditional Statements
+- **if**, **elif**, **else** are used for decision-making based on conditions.  
+
+### Comprehensions
+- Concise alternatives to `for` loops for creating lists or dictionaries, faster and more compact.  
+
+### Key Features
+- `for` loops automatically handle iteration (no manual increment like `i++` in other languages).  
+- Comprehensions reduce code length and improve performance compared to traditional `for` loops.  
+- Use `.items()` for dictionary iteration to access keys and values.  
+
+> Conditional statements are often used within loops for complex logic.
+
