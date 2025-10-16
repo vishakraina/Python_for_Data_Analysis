@@ -322,3 +322,60 @@ This document covers the basics of loops (**for** and **while**), conditional st
 
 > Conditional statements are often used within loops for complex logic.
 
+# 7. Functions Notes
+
+## Overview  
+Functions in Python are **named sequences of statements** that perform specific tasks, improving code **reusability** and **modularity**.  
+This document covers **user-defined functions**, **lambda functions**, and their applications, with examples from the provided transcript and `functions.ipynb`.  
+It also highlights the differences between **traditional** and **lambda functions**, emphasizing their **use cases** and **benefits**.
+
+---
+
+## Key Points
+
+- **Functions:** Named blocks of code that execute specific tasks when called, defined using the `def` keyword.
+
+### Types of Functions
+- **Built-in Functions:** Predefined in Python (e.g., `type()`, `len()`, `int()`).
+- **User-Defined Functions:** Created by developers to perform custom tasks (e.g., calculating BMI or checking even/odd).
+- **Lambda Functions:** Small, anonymous functions defined with the `lambda` keyword, ideal for single-expression tasks.
+
+---
+
+### Function Components
+- **Name:** Unique identifier for the function (e.g., `even_odd`).
+- **Arguments:** Inputs passed to the function (optional, can have default values).
+- **Body:** Code block that performs the task.
+- **Return:** Optional output of the function.
+
+---
+
+### Lambda Functions
+- **Syntax:**  
+  ```python
+  lambda arguments: expression
+  ```
+- Contain a **single expression**, no multi-line logic.  
+- Reduce code complexity and improve performance for simple operations.
+
+---
+
+### Why Use Functions
+- **Reusability:** Call functions multiple times without rewriting code.  
+- **Modularity:** Organize code into manageable, reusable blocks.  
+- **Maintainability:** Easier to update and deploy code in production environments.
+
+---
+
+### Default Arguments
+Allow functions to use preset values if arguments are not provided.
+
+---
+
+## Use Cases
+- Calculating **factorials**  
+- Summing **natural numbers**  
+- Checking **conditions** (e.g., even/odd)  
+- Simplifying **repetitive tasks**
+
+---
