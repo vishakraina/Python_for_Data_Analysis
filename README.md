@@ -379,3 +379,54 @@ Allow functions to use preset values if arguments are not provided.
 - Simplifying **repetitive tasks**
 
 ---
+
+# 8. Map, Reduce, and Filter Functions Notes
+
+## Overview  
+Map, reduce, and filter functions are **functional programming tools** in Python that simplify code by reducing the need for explicit loops and branching.  
+They are efficient alternatives to traditional `for` loops, offering concise syntax and lower computational overhead.  
+This document summarizes their **definitions**, **use cases**, and examples from the provided transcript and `map_reduce_filter.ipynb`.
+
+---
+
+## Key Points
+
+- **Map, Reduce, Filter:** Built-in functions for processing iterables (e.g., lists, tuples) in a functional programming style.  
+  - **Map:** Applies a function to each element in an iterable, returning a new collection.  
+  - **Filter:** Extracts elements from an iterable that satisfy a condition.  
+  - **Reduce:** Combines elements of an iterable into a single result using pairwise operations.
+
+---
+
+### Benefits
+- Reduce code length and complexity compared to `for` loops.  
+- Improve performance (lower time complexity) for certain tasks.  
+- Enhance readability with concise, expressive syntax.
+
+---
+
+### Syntax
+- **Map:** `map(function, iterable)`  
+- **Filter:** `filter(function, iterable)`  
+- **Reduce:** `reduce(function, iterable)` *(requires `from functools import reduce`)*
+
+---
+
+### Lambda Functions
+Often used with `map`, `filter`, and `reduce` to define **inline operations**, reducing the need for named functions.
+
+---
+
+### Use Cases
+- **Map:** Transform data (e.g., convert strings to uppercase, compute areas).  
+- **Filter:** Extract elements based on conditions (e.g., values above average, non-null values).  
+- **Reduce:** Aggregate data (e.g., multiply or sum all elements).
+
+---
+
+### Notes
+- `reduce` is **deprecated** in Python’s built-in namespace but available in the `functools` module.  
+- These functions are less common in **data analytics** but useful for specific tasks.  
+- Always convert map/filter results to a list (e.g., `list(map(...))`) to view output.
+
+---
