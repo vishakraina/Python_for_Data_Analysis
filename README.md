@@ -430,3 +430,52 @@ Often used with `map`, `filter`, and `reduce` to define **inline operations**, r
 - Always convert map/filter results to a list (e.g., `list(map(...))`) to view output.
 
 ---
+
+# 9. File Handling Notes
+
+## Overview  
+File handling in Python involves operations like **creating, reading, writing, updating, and deleting files**.  
+It is crucial for **web applications** and certain programming tasks, though **data science** often relies on libraries like **pandas** for file operations.  
+This document summarizes file handling methods, modes, and best practices, with examples from the provided transcript and `file_handling.ipynb`.
+
+---
+
+## Key Points
+
+- **File Handling:** The process of managing files (e.g., reading, writing, appending) in Python.
+
+### Key Operations
+- **Open:** Access a file with a specified mode (e.g., read, write, append).  
+- **Read:** Retrieve content from a file.  
+- **Write:** Add or overwrite content in a file.  
+- **Append:** Add content to the end of a file.  
+- **Close:** End the file session to free resources.
+
+---
+
+### File Modes
+- `'r'`: Read (default, fails if file is not readable).  
+- `'w'`: Write (overwrites file, fails if file is not writable).  
+- `'a'`: Append (adds to end of file).  
+- `'a+'`: Append and read (allows both appending and reading).
+
+---
+
+### Best Practices
+- Always **close files** after operations to free resources (`file.close()` or use `with` statement).  
+- Use `with` statement for **automatic file closure**.  
+- Specify correct **permissions** to avoid errors (e.g., cannot read a file opened in `'w'` mode).  
+- Use `\n` to add **line breaks** when writing/appending.
+
+---
+
+### Pandas for Data Science
+Libraries like **pandas** simplify file reading (e.g., CSVs, Excel) compared to traditional file handling.
+
+---
+
+### Use Cases
+- **Traditional programming:** Read/write text files, logs, or configurations.  
+- **Data science:** Use pandas for structured data (e.g., CSVs) instead of manual file handling.
+
+---
