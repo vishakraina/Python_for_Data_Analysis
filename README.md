@@ -474,6 +474,36 @@ Libraries like **pandas** simplify file reading (e.g., CSVs, Excel) compared to 
 
 ---
 
+# 10. Control Structures Notes
+
+## Overview  
+Control structures in Python guide program flow by analyzing variables and making decisions based on conditions or iterating over data.  
+This document covers **binary and relational operators**, **decision-making with if-else**, **iteration with loops**, **comprehensions**, and **functional programming tools (map, filter, reduce)**, with examples from the provided transcript and `control_structures.ipynb`.
+
+---
+
+## Key Points  
+
+- **Control Structures:**  
+  Blocks that analyze variables and direct program flow based on conditions (e.g., `if-else`) or iteration (e.g., `for`, `while` loops).
+
+- **Binary Operators:**  
+  Operate on two operands (e.g., `a + b`, where `a` and `b` are operands).
+
+- **Relational Operators:**  
+  Compare two values, returning `True` or `False` (e.g., `==`, `!=`, `>`, `<`, `>=`, `<=`).
+
+- **Decision Making:**  
+  Use `if`, `elif`, `else` to execute code based on conditions.  
+  ```python
+  x = 10
+  if x > 5:
+      print("Greater than 5")
+  elif x == 5:
+      print("Equal to 5")
+  else:
+      print("Less than 5")
+
 ### Use Cases
 - **Traditional programming:** Read/write text files, logs, or configurations.  
 - **Data science:** Use pandas for structured data (e.g., CSVs) instead of manual file handling.
