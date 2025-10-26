@@ -509,3 +509,68 @@ This document covers **binary and relational operators**, **decision-making with
 - **Data science:** Use pandas for structured data (e.g., CSVs) instead of manual file handling.
 
 ---
+
+# 10. Object-Oriented Programming (OOPs) Concepts in Python
+
+## Introduction
+Object-Oriented Programming (OOPs) is a paradigm that models real-world entities using **classes** and **objects**. It focuses on bundling data and methods together, ensuring modularity, reusability, and abstraction.
+
+## Main Concepts
+
+### 1. Class
+A **class** is a blueprint for creating objects. It defines attributes (data) and methods (functions) that describe behavior.
+
+### 2. Object
+An **object** is an instance of a class. Each object has its own data but shares the class’s structure and behavior.
+
+### 3. Encapsulation
+**Encapsulation** bundles data and methods into one unit and restricts direct access to some components, maintaining data integrity.
+
+### 4. Inheritance
+**Inheritance** allows one class (child) to acquire the properties and methods of another class (parent), promoting code reuse and hierarchy.
+
+### 5. Polymorphism
+**Polymorphism** allows different classes to define methods with the same name but different behavior, enabling flexibility and scalability.
+
+### 6. Abstraction
+**Abstraction** hides implementation details and shows only the necessary features, simplifying interaction with complex systems.
+
+### 7. Class vs Instance Variables
+- **Class Variables:** Shared among all objects of the class.
+- **Instance Variables:** Unique to each object.
+
+### 8. Methods
+Methods define the behavior of a class and typically operate on instance variables using the `self` keyword.
+
+## Summary
+OOPs provides structure and clarity in programming through:
+- Organized code via **classes and objects**
+- Reusability using **inheritance**
+- Flexibility with **polymorphism**
+- Data protection via **encapsulation**
+- Simplification through **abstraction**
+
+# 11. NumPy Library in Python
+
+## Introduction to NumPy
+NumPy (Numerical Python) is a powerful library for numerical computations in Python. It provides support for multi-dimensional arrays and matrices, along with optimized mathematical functions to operate on them efficiently.
+
+## Why Use NumPy?
+- **Speed:** NumPy arrays are much faster than Python lists because they are implemented in C.
+- **Memory Efficiency:** Arrays use less memory compared to lists.
+- **Functionality:** Includes advanced mathematical, statistical, and array manipulation tools.
+- **Scalability:** Suitable for large datasets in data science and analytics.
+
+## Installation
+Install NumPy using:
+```bash
+pip install numpy
+```
+
+## Importing NumPy
+NumPy is generally imported as:
+```python
+import numpy as np
+```
+
+This convention simplifies function calls and ensures consistency in Python programs.
