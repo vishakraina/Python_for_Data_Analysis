@@ -645,3 +645,121 @@ result = pd.concat([df1, df2])
 merged = pd.merge(df1, df2, on='cust_id', how='inner')
 ```
 
+# 13. Matplotlib and Pandas Visualization Guide
+
+## 1. Creating a DataFrame for Visualization
+
+Matplotlib works well with Pandas DataFrames, which are often used to prepare data for visualization.
+
+> **Example: Creating a DataFrame from a Dictionary**
+```python
+import pandas as pd
+Data = {'Year': [1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020],
+        'Exchange Rate': [65, 69, 71, 64, 62, 59, 72, 71, 75, 78, 81]}
+df = pd.DataFrame(Data)
+```
+---
+
+## 2. Plotting with Matplotlib and Pandas
+
+### Line Plot
+```python
+df.plot(x='Year', y='Exchange Rate', kind='line')
+plt.show()
+```
+
+### Area Plot
+```python
+df.plot(x='Year', y='Exchange Rate', kind='area')
+plt.show()
+```
+
+### Bar Plot
+```python
+df.plot(x='Year', y='Exchange Rate', kind='bar')
+plt.show()
+```
+
+### Scatter Plot
+```python
+df.plot(x='Year', y='Exchange Rate', kind='scatter')
+plt.show()
+```
+
+---
+
+## 3. Pie Charts
+
+### Simple Pie Chart
+```python
+Data = {'Tasks': [100, 500, 300]}
+df2 = pd.DataFrame(Data, columns=['Tasks'], index=['Pending', 'Completed', 'Ongoing'])
+df2.plot.pie(y='Tasks', figsize=(5, 5))
+plt.show()
+```
+
+### Customized Pie Chart
+```python
+labels = ['Java', 'Python', 'R', 'Javascript']
+sizes = [15, 30, 45, 10]
+explode_labels = (0, 0.2, 0, 0)
+fig1, ax1 = plt.subplots()
+ax1.pie(sizes, explode=explode_labels, labels=labels, shadow=True, startangle=90)
+ax1.axis('equal')
+plt.show()
+```
+
+---
+
+## 4. Working with a Real Dataset (Churn Modelling)
+
+### Load and Clean Data
+```python
+churn_df = pd.read_csv('Churn_Modelling.csv')
+churn_df.drop(['RowNumber', 'CustomerId', 'Surname'], axis=1, inplace=True)
+```
+
+### Value Counts and Plots
+```python
+churn_df['Geography'].value_counts().plot(kind='bar')
+plt.show()
+```
+
+---
+
+## 5. Advanced Visualizations
+
+### Scatter Plot (Age vs Tenure)
+```python
+plt.scatter(churn_df['Age'], churn_df['Tenure'])
+plt.show()
+```
+
+### Histogram (Tenure Distribution)
+```python
+plt.hist(churn_df['Tenure'], bins=30)
+plt.show()
+```
+
+### Box Plot (Age Distribution)
+```python
+churn_df['Age'].plot.box()
+plt.show()
+```
+
+---
+
+## 6. Integration with Seaborn
+```python
+import seaborn as sns
+sns.countplot(x='Geography', data=churn_df)
+plt.show()
+```
+
+---
+
+## Summary
+- Matplotlib creates powerful visualizations.
+- Common plots: line, bar, pie, scatter, histogram, box.
+- Combine with Pandas and Seaborn for data analysis.
+
