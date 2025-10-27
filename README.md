@@ -758,8 +758,71 @@ plt.show()
 
 ---
 
-## Summary
-- Matplotlib creates powerful visualizations.
-- Common plots: line, bar, pie, scatter, histogram, box.
-- Combine with Pandas and Seaborn for data analysis.
+# 14 Seaborn in Python – Quick Notes
 
+## Introduction
+Seaborn is a Python visualization library built on top of **Matplotlib**.  
+It simplifies creating **statistical and attractive plots** and integrates well with **Pandas DataFrames**.  
+It also includes built-in datasets like *Iris* and *Flights* for practice.
+
+---
+
+## Why Use Seaborn
+- Simplifies complex plots (heatmaps, pairplots)  
+- Focused on **statistical visualizations**  
+- Comes with **aesthetic default styles**  
+- Works seamlessly with **Pandas**  
+- Includes **sample datasets** for learning  
+
+---
+
+## Installation
+```bash
+pip install seaborn
+
+
+Key Plot Types
+
+Count Plot: Shows frequency of categories
+
+KDE Plot: Displays data distribution
+
+Histplot: Combines histogram + KDE
+
+Pair Plot: Shows pairwise relationships
+
+Line Plot: Visualizes trends
+
+Box Plot: Shows spread and outliers
+
+Heatmap: Visualizes correlations or matrices
+
+Customization
+
+Apply color palettes (Spectral, coolwarm)
+
+Add titles, labels, and legends using Matplotlib
+
+Use sns.set_theme() for unified styling
+
+Advanced Visuals
+
+Correlation Heatmap: Shows relationships between features
+
+Pairplot with Hue: Highlights categories
+
+Jointplot / Lmplot: Shows two-variable relationships
+
+Plotly (Interactive)
+
+Use Plotly for interactive dashboards and dynamic visualizations.
+
+Summary
+
+Seaborn = Easy + Beautiful + Statistical
+
+Ideal for Exploratory Data Analysis (EDA)
+
+Plotly → for interactivity
+
+Matplotlib → for customization
