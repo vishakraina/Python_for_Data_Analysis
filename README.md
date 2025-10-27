@@ -777,7 +777,7 @@ It also includes built-in datasets like *Iris* and *Flights* for practice.
 ---
 
 ## Installation
-```bash
+
 pip install seaborn
 
 
