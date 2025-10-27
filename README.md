@@ -574,3 +574,74 @@ import numpy as np
 ```
 
 This convention simplifies function calls and ensures consistency in Python programs.
+
+# 12. Pandas Library in Python
+
+## Introduction
+Pandas is a fast, flexible, and powerful Python library for data analysis and manipulation. It handles structured data efficiently using **DataFrames** and **Series**.
+
+### Why Use Pandas?
+- **Speed:** Optimized for large datasets.
+- **Flexibility:** Supports multiple file formats (CSV, Excel, JSON, etc.).
+- **Ease of Use:** Simplifies data handling.
+- **Data Science:** Essential for cleaning, exploring, and analyzing data.
+
+### Installation
+```bash
+pip install pandas
+```
+
+### Importing
+```python
+import pandas as pd
+import numpy as np
+```
+
+---
+
+## 1. Creating and Reading Data
+```python
+df = pd.read_csv("path/to/Churn_Modelling.csv")
+df.head()
+df.info()
+df.describe()
+```
+
+## 2. Accessing and Modifying Data
+```python
+df['NewSalary'] = df['EstimatedSalary'] * 1.1
+df['FullName'] = df['CustomerId'].astype(str) + ' ' + df['Surname']
+df['Bal_SQRT'] = df['Balance'].apply(np.sqrt)
+```
+
+## 3. Filtering and Sorting
+```python
+filtered_df = df[df['Age'] >= 50]
+df_sorted = df.sort_values(by=['Age', 'Tenure'], ascending=[False, True])
+```
+
+## 4. Handling Missing Values
+```python
+dfa = pd.read_csv("path/to/Test.csv")
+dfa_clean = dfa.dropna()
+dfa['Age'] = dfa['Age'].fillna(dfa['Age'].median())
+```
+
+## 5. Removing Columns
+```python
+df.pop('RowNumber')
+df = df.drop(columns=['Surname', 'CreditScore'])
+```
+
+## 6. Grouping Data
+```python
+geo_mean = df.groupby('Geography').mean(numeric_only=True)
+geo_gender_mean = df.groupby(['Geography', 'Gender'])['Balance'].mean()
+```
+
+## 7. Combining DataFrames
+```python
+result = pd.concat([df1, df2])
+merged = pd.merge(df1, df2, on='cust_id', how='inner')
+```
+
