@@ -781,7 +781,7 @@ It also includes built-in datasets like *Iris* and *Flights* for practice.
 pip install seaborn
 
 
-Key Plot Types
+## Key Plot Types
 
 Count Plot: Shows frequency of categories
 
@@ -797,7 +797,7 @@ Box Plot: Shows spread and outliers
 
 Heatmap: Visualizes correlations or matrices
 
-Customization
+## Customization
 
 Apply color palettes (Spectral, coolwarm)
 
@@ -805,7 +805,7 @@ Add titles, labels, and legends using Matplotlib
 
 Use sns.set_theme() for unified styling
 
-Advanced Visuals
+## Advanced Visuals
 
 Correlation Heatmap: Shows relationships between features
 
@@ -817,7 +817,7 @@ Plotly (Interactive)
 
 Use Plotly for interactive dashboards and dynamic visualizations.
 
-Summary
+## Summary
 
 Seaborn = Easy + Beautiful + Statistical
 
